@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>K-MÚSIC | Mi música</title>
+
+    <!-- Conectar archivo CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- MENU LATERAL -->
+    <aside class="menu">
+
+        <div class="logo">
+            <span class="icono">♫</span>
+            <h2 class="texto-menu">K-MÚSIC </h2>
+        </div>
+
+        <nav>
+       
+
+            <a href="index.html">
+                <span class="icono">⌂</span>
+                <span class="texto-menu">Inicio</span>
+            </a>
+
+            <a href="álbumes.html">
+                <span class="icono">▣</span>
+                <span class="texto-menu">Álbumes</span>
+            </a>
+
+            <a href="videos.html">
+                <span class="icono">▷</span>
+                <span class="texto-menu">Videos</span>
+            </a>
+
+            <a href="mi música.html">
+                <span class="icono">♫</span>
+                <span class="texto-menu">Mi música</span>
+            </a>
+             <a href="index_formulario_registro.html">
+                <span class="icono">★</span>
+                <span class="texto-menu">Suscripción</span>
+            </a>
+            <a href="Premium.html">
+                <span class="icono">💗</span>
+                <span class="texto-menu">Premium</span>
+            </a>
+            
+        </nav>
+
+
+    </aside>
+
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de registro</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="contenedor">
+    <header class="encabezado">
+      
+      <h1>SUSCRIPCIÓN</h1>
+    </header>
+
+    <form id="formulario" novalidate>
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" maxlength="100"
+               autocomplete="given-name" placeholder="Ej. ANA MARÍA">
+        <small class="error" id="error-nombre"></small>
+      </div>
+
+      <div class="campo">
+        <label for="apellido">Apellido paterno</label>
+        <input id="apellido" name="apellido" type="text" maxlength="100"
+               autocomplete="family-name" placeholder="Ej. LÓPEZ">
+        <small class="error" id="error-apellido"></small>
+      </div>
+
+      <div class="campo">
+        <label for="apellidoMaterno">Apellido materno</label>
+        <input id="apellidoMaterno" name="apellidoMaterno" type="text" maxlength="100"
+               placeholder="Ej. HERNÁNDEZ">
+        <small class="error" id="error-apellidoMaterno"></small>
+      </div>
+
+      <div class="campo campo-fecha">
+        <label for="fechaNacimiento">Fecha de nacimiento</label>
+        <input id="fechaNacimiento" name="fechaNacimiento" type="text"
+               placeholder="Selecciona día, mes y año" readonly>
+        <div id="selectorFecha" class="selector-fecha" hidden>
+          <label id="tituloFecha" for="opcionFecha">Selecciona el día</label>
+          <select id="opcionFecha"></select>
+          <button type="button" id="siguienteFecha">Continuar</button>
+        </div>
+        <small class="error" id="error-fechaNacimiento"></small>
+      </div>
+
+      <div class="fila-corta">
+        <div class="campo campo-edad">
+          <label for="edad">Edad</label>
+          <input id="edad" name="edad" type="text" inputmode="numeric"
+                 maxlength="3" placeholder="Ej. 18">
+          <small class="error" id="error-edad"></small>
+        </div>
+
+        <div class="campo campo-tarjeta">
+          <label for="tarjeta">Número de tarjeta</label>
+          <input id="telefono" name="telefono" type="text" inputmode="numeric"
+                 maxlength="16" autocomplete="tarjeta" placeholder="16 dígitos">
+          <small class="error" id="error-telefono"></small>
+        </div>
+      </div>
+
+      <div class="campo">
+        <label for="correo">Correo electrónico</label>
+        <input id="correo" name="correo" type="email" autocomplete="email"
+               placeholder="tunombre@correo.com">
+        <small class="error" id="error-correo"></small>
+      </div>
+
+      <button type="submit">Enviar formulario</button>
+      <p id="resultado" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+</body>
+</html>

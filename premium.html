@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-MUSIC Premium</title>
+
+    <title>K-MÚSIC | Mi música</title>
+
+    <!-- Conectar archivo CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- MENU LATERAL -->
+    <aside class="menu">
+
+        <div class="logo">
+            <span class="icono">♫</span>
+            <h2 class="texto-menu">K-MÚSIC </h2>
+        </div>
+
+        <nav>
+       
+
+            <a href="index.html">
+                <span class="icono">⌂</span>
+                <span class="texto-menu">Inicio</span>
+            </a>
+
+            <a href="álbumes.html">
+                <span class="icono">▣</span>
+                <span class="texto-menu">Álbumes</span>
+            </a>
+
+            <a href="videos.html">
+                <span class="icono">▷</span>
+                <span class="texto-menu">Videos</span>
+            </a>
+
+            <a href="mi música.html">
+                <span class="icono">♫</span>
+                <span class="texto-menu">Mi música</span>
+            </a>
+             <a href="index_formulario_registro.html">
+                <span class="icono">★</span>
+                <span class="texto-menu">Suscripción</span>
+            </a>
+             <a href="Premium.html">
+                <span class="icono">💗</span>
+                <span class="texto-menu">Premium</span>
+            </a>
+            
+            
+        </nav>
+
+        </aside>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #101018;
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #ff4fa3;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            border: 1px solid #ff4fa3;
+            padding: 10px 20px;
+            border-radius: 25px;
+        }
+
+        .principal {
+            text-align: center;
+            padding: 65px 20px 40px;
+        }
+
+        .principal h1 {
+            font-size: 45px;
+            margin-bottom: 18px;
+        }
+
+        .principal h1 span {
+            color: #ff4fa3;
+        }
+
+        .principal p {
+            color: #ccccd5;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .planes {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: wrap;
+            gap: 25px;
+            padding: 35px 20px 65px;
+        }
+
+        .tarjeta {
+            background: #20202c;
+            width: 290px;
+            padding: 30px 25px;
+            border-radius: 20px;
+            border: 1px solid #393947;
+            text-align: center;
+        }
+
+        .destacada {
+            border: 2px solid #ff4fa3;
+            transform: scale(1.04);
+        }
+
+        .etiqueta {
+            background: #ff4fa3;
+            color: #101018;
+            padding: 7px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 18px;
+        }
+
+        .tarjeta h2 {
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .precio {
+            font-size: 38px;
+            font-weight: bold;
+            color: #ffd84d;
+            margin: 15px 0;
+        }
+
+        .precio small {
+            font-size: 14px;
+            color: #ccccd5;
+        }
+
+        .tarjeta ul {
+            list-style: none;
+            text-align: left;
+            margin: 25px 0;
+            line-height: 2.2;
+            color: #ddddE5;
+        }
+
+        .tarjeta button {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 25px;
+            background: #ff4fa3;
+            color: #101018;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .tarjeta button:hover {
+            background: #ffd84d;
+        }
+
+        .destacada button {
+            background: #ffd84d;
+        }
+
+        .beneficios {
+            text-align: center;
+            padding: 45px 20px;
+            background: #191923;
+        }
+
+        .beneficios h2 {
+            font-size: 28px;
+            margin-bottom: 25px;
+        }
+
+        .beneficios p {
+            color: #ccccd5;
+            line-height: 2;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #9999a8;
+        }
+
+        @media (max-width: 650px) {
+            .principal h1 {
+                font-size: 34px;
+            }
+
+            .destacada {
+                transform: none;
+            }
+
+            header {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">♫ K-MUSIC</div>
+        <a href="index.html">Volver al inicio</a>
+    </header>
+
+    <section class="principal">
+        <h1>¡Lleva tu música al <span>siguiente nivel!</span></h1>
+
+        <p>
+            Disfruta tus canciones favoritas sin interrupciones.
+            <br>
+            Elige el plan que mejor se adapte a ti.
+        </p>
+    </section>
+
+    <section class="planes">
+
+        <div class="tarjeta">
+            <h2>Gratis</h2>
+            <p>Para comenzar a disfrutar.</p>
+
+            <div class="precio">$0 <small>/ mes</small></div>
+
+            <ul>
+                <li>✓ Acceso a canciones</li>
+                <li>✓ Crear listas de reproducción</li>
+                <li>✓ Reproducción con anuncios</li>
+                <li>✗ Sin descargas</li>
+            </ul>
+
+            <button onclick="seleccionar('Gratis')">
+                Tu plan actual
+            </button>
+        </div>
+
+        <div class="tarjeta destacada">
+            <span class="etiqueta">MÁS POPULAR</span>
+
+            <h2>Premium</h2>
+            <p>Disfruta sin interrupciones.</p>
+
+            <div class="precio">$89 <small>/ mes</small></div>
+
+            <ul>
+                <li>✓ Música sin anuncios</li>
+                <li>✓ Descargas de canciones</li>
+                <li>✓ Reproducción ilimitada</li>
+                <li>✓ Mejor calidad de audio</li>
+            </ul>
+
+            <button onclick="seleccionar('Premium')">
+                Elegir Premium
+            </button>
+        </div>
+
+        <div class="tarjeta">
+            <h2>Familiar</h2>
+            <p>Música para compartir.</p>
+
+            <div class="precio">$129 <small>/ mes</small></div>
+
+            <ul>
+                <li>✓ Hasta 4 perfiles</li>
+                <li>✓ Música sin anuncios</li>
+                <li>✓ Descargas de canciones</li>
+                <li>✓ Cada persona con sus listas</li>
+            </ul>
+
+            <button onclick="seleccionar('Familiar')">
+                Elegir Familiar
+            </button>
+        </div>
+
+    </section>
+
+    <section class="beneficios">
+        <h2>¿Por qué elegir K-MUSIC Premium?</h2>
+
+        <p>
+            🎵 Escucha tu música favorita sin anuncios.
+            <br>
+            🎧 Disfruta de una mejor experiencia musical.
+            <br>
+            📱 Accede a tus canciones cuando quieras.
+            <br>
+            💗 Crea tus propias listas de reproducción.
+        </p>
+    </section>
+
+    <footer>
+        © 2026 K-MUSIC | Tu música, tu estilo.
+        <br>
+        Precios Exclusivos.
+    </footer>
+
+    <script>
+        function seleccionar(plan) {
+            alert("¡Has seleccionado el plan " + plan +
+            "! Gracias por elegir K-MUSIC.");
+        }
+    </script>
+
+</body>
+</html>
